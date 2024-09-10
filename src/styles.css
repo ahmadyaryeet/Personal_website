@@ -21,7 +21,122 @@ body {
   
   .image-placeholder {
     width: 40%;
-    /* You can style this further when you add your image */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+    margin-left: 100px; /* Add this line to move the image to the right */
+  }
+
+  .profile-image {
+    max-width: 450%;
+    width: 150%;
+    height: auto;  /* This will make the image circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  /* This adds a subtle shadow */
+  }
+
+  .game-development {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .game-development h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .intro {
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 600px;  /* Limit width to move content left */
+  }
+  
+  .section-title {
+    font-family: 'Roboto', sans-serif;
+    color: #bdbdbd;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4a4a4a;
+    padding-bottom: 10px;
+    max-width: 600px;  /* Limit width to move content left */
+  }
+  
+  .game {
+    margin-bottom: 30px;
+    max-width: 600px;  /* Limit width to move content left */
+    border-bottom: 1px solid #4a4a4a;  /* Add line beneath each game */
+    padding-bottom: 20px;
+  }
+  
+  .game:last-child {
+    border-bottom: none;  /* Remove border for the last game */
+  }
+  
+  .game-title {
+    color: #4fc3f7;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .game-description {
+    line-height: 1.6;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #4fc3f7;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  .game-with-slideshow {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .slideshow {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slideshow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .slideshow-button.prev {
+    left: 10px;
+  }
+  
+  .slideshow-button.next {
+    right: 10px;
+  }
+  
+  .game-content {
+    flex: 1;
   }
   
   header {
@@ -63,4 +178,319 @@ body {
   
   a:hover {
     text-decoration: underline;
+  }
+
+  .project-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .game-development h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .intro {
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 800px;
+  }
+  
+  .section-title {
+    font-family: 'Roboto', sans-serif;
+    color: #bdbdbd;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4a4a4a;
+    padding-bottom: 10px;
+    max-width: 800px;
+  }
+  
+  .game {
+    margin-bottom: 30px;
+    max-width: 800px;
+    border-bottom: 1px solid #4a4a4a;
+    padding-bottom: 20px;
+  }
+  
+  .game-with-slideshow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 100%;
+    border-bottom: 1px solid #4a4a4a;
+    padding-bottom: 20px;
+  }
+  
+  .game-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .game-title {
+    color: #4fc3f7;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .game-description {
+    line-height: 1.6;
+  }
+  
+  .slideshow {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slideshow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .slideshow-button.prev {
+    left: 10px;
+  }
+  
+  .slideshow-button.next {
+    right: 10px;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #4fc3f7;
+    text-decoration: none;
+  }
+
+  .game-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4fc3f7;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .game-link:hover {
+    background-color: #3b9ac7;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  .webapp-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .webapp-text-content {
+    flex: 1;
+    max-width: 60%;
+  }
+
+  .webapp-project-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .webapp-title {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .webapp-image-content {
+    width: 35%;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+  }
+  
+  .webapp-intro {
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 800px;
+  }
+  
+  .webapp-section-title {
+    font-family: 'Roboto', sans-serif;
+    color: #bdbdbd;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4a4a4a;
+    padding-bottom: 10px;
+  }
+  
+  .webapp-project {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #4a4a4a;
+    padding-bottom: 20px;
+  }
+
+  .webapp-project:last-child {
+    border-bottom: none;
+  }
+  
+  
+  .webapp-slideshow {
+    position: relative;
+  }
+  
+  .webapp-project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .webapp-project-content {
+    flex: 1;
+    max-width: 60%;
+  }
+  
+  .webapp-project-title {
+    color: #4fc3f7;
+    margin-bottom: 15px;
+  }
+  
+  .webapp-project-description {
+    line-height: 1.6;
+  }
+  
+  .webapp-slideshow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .webapp-slideshow-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .webapp-slideshow-button.prev {
+    left: 5px;
+  }
+  
+  .webapp-slideshow-button.next {
+    right: 5px;
+  }
+  
+  .webapp-skills-section {
+    margin-top: 40px;
+  }
+  
+  .webapp-skills-section ul {
+    padding-left: 20px;
+  }
+  
+  .webapp-skills-section li {
+    margin-bottom: 10px;
+  }
+  
+  .webapp-back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #4fc3f7;
+    text-decoration: none;
+  }
+  
+  .webapp-back-link:hover {
+    text-decoration: underline;
+  }
+
+  .about-me {
+    margin-bottom: 20px;
+  }
+  
+  .email-container {
+    margin-top: 20px;
+  }
+  
+  .email-link {
+    color: #4fc3f7; /* or any color that fits your design */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .email-link:hover {
+    color: #81d4fa; /* slightly lighter color on hover */
+    text-decoration: underline;
+  }
+
+  .game-detail-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .game-detail-title {
+    text-align: center;
+    color: #4fc3f7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4fc3f7;
+  }
+  
+  .game-detail-content {
+    line-height: 1.6;
+  }
+  
+  .game-detail-content h2 {
+    color: #bdbdbd;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .game-detail-content p {
+    margin-bottom: 20px;
+  }
+  
+  .game-detail-content ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .game-detail-content li {
+    margin-bottom: 10px;
   }
