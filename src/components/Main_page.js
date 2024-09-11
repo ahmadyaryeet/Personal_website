@@ -16,7 +16,7 @@ function MainPage() {
           <section className="education">
             <h2>Work Experience</h2>
             <ul>
-              <li>GCHQ internship - Trained a Neural network to summarise incoming threats into a few words, and classify them into one of 72 catogories. During the internship I was introduced to a variety of new concepts, such as Jaccard Distance, MLP's and Word embeddings to name a few.</li>
+              <li>GCHQ internship - Did a 4- week internship where I trained a Neural network to summarise incoming threats into a few words, and classify them into one of 72 catogories. During the internship I was introduced to a variety of new concepts, such as Jaccard Distance, MLP's and Word embeddings to name a few.</li>
               <li>J.P. Morgan Internship - I worked as a summer Intern in the Asset Management Line of Business at JPM, where I gained a insight into the how asset managment actually works.</li>
             </ul>
           </section>
