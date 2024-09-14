@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import the images for Imagineer AI
-import aiCompanion1 from '../images/talkie/talkie1.png';
-import aiCompanion2 from '../images/talkie/talkie4.png';
-import aiCompanion3 from '../images/talkie/talkie3.png';
-import aiCompanion4 from '../images/talkie/talkie2.png';
+import aiCompanion1 from '../../images/talkie/talkie1.png';
+import aiCompanion2 from '../../images/talkie/talkie4.png';
+import aiCompanion3 from '../../images/talkie/talkie3.png';
+import aiCompanion4 from '../../images/talkie/talkie2.png';
 
 function ImagineerAIPage() {
   return (
