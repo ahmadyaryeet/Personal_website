@@ -8,6 +8,8 @@ import ArchersAscent from './components/Games/ArchersAscent_page';
 import GardenOfZen from './components/Games/Garden_page';
 import ImagineerAIPage from './components/App_pages/imagineer_ai';
 
+import { Analytics } from "@vercel/analytics/react";
+
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/Games/Garden_page" element={<GardenOfZen />} />
         <Route path="/App_pages/imagineer_ai" element={<ImagineerAIPage />} />
       </Routes>
+
+      <Analytics />
     </Router>
   );
 }
