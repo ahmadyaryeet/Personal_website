@@ -58,7 +58,14 @@ function WebAppDevelopment() {
             
             {projects.map((project, index) => (
               <div key={index} className="webapp-project">
-                <h3 className="webapp-project-title">{project.title}</h3>
+                {/* Use Link here to make the title clickable */}
+                <h3 className="webapp-project-title">
+                  {project.link ? (
+                    <Link to={project.link}>{project.title}</Link>
+                  ) : (
+                    project.title
+                  )}
+                </h3>
                 <p className="webapp-project-description">{project.description}</p>
               </div>
             ))}
