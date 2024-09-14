@@ -17,9 +17,9 @@ function WebAppDevelopment() {
   const projects = [
     {
       title: "Imagineer AI",
-      description: "This innovative app allows users to create and interact with fictional characters using advanced AI models (ChatGPT/Claude). It demonstrates my proficiency in working with Large Language Models (LLMs), implementing image generation AI, creating immersive user experiences, and developing complex, feature-rich applications. With super easy character generation.",
+      description: "This innovative app allows users to create and interact with fictional characters using advanced AI models (ChatGPT/Claude). It demonstrates my proficiency in working with Large Language Models (LLMs), implementing image generation AI, creating immersive user experiences, and developing complex, feature-rich applications. With super easy character generation, chat history memory.",
       images: [aiCompanion1, aiCompanion2, aiCompanion3, aiCompanion4],
-      link: "/App_pages/imagineer_ai", // Add a link property for the Imagineer AI project
+      link: "./App_pages/imagineer_ai", // Add a link property for the Imagineer AI project
     },
     {
       title: "Floop - Music Player",
