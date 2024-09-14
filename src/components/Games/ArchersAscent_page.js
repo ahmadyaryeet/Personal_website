@@ -24,7 +24,7 @@ function ArchersAscent() {
         <p>As there were few viable options online I used a mixture of youtube tutorials and trial and error, to create my own terrain using unity's in built tools. I ended up creating a deserted army base, located on mars, as the setting for my game.</p>
         
         <h3>Scripts</h3>
-        I created over 150 + scripts for all the elements to interact with each other correctly, mainly the Player, enemies, round detecter, so forth. In the process I learnt about getting very comfortable with kinematics, unity's physics system, projectile motion involving a large amount of calculus.
+        <p>I created over 150 + scripts for all the elements to interact with each other correctly, mainly the Player, enemies, round detecter, so forth. In the process I learnt about getting very comfortable with kinematics, unity's physics system, projectile motion involving a large amount of calculus.</p>
 
         <h2>Key Takeaways</h2>
         <ul>
