@@ -6,6 +6,8 @@ import WebAppDevelopment from './components/AppDev_page';
 import GameDevelopment from './components/GameDev_page';
 import ArchersAscent from './components/Games/ArchersAscent_page';
 import GardenOfZen from './components/Games/Garden_page';
+import ImagineerAIPage from './components/App_pages/imagineer_ai';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path="/game-development" element={<GameDevelopment />} />
         <Route path="/Games/ArchersAscent_page" element={<ArchersAscent />} />
         <Route path="/Games/Garden_page" element={<GardenOfZen />} />
+        <Route path="/App_pages/imagineer_ai" element={<ImagineerAIPage />} />
       </Routes>
     </Router>
   );
