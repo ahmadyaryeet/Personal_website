@@ -17,7 +17,18 @@ function PlaribusPokerAI() {
       <p>The next step was finding the appropriate server instance to run and train this bot. This led me to learn all about Amazon's EC2 services and how to work on a server instead of my local machine. The spefics I required to train my bot was 512 gb of CPU ram, 128 cores. Suprisingly this bot didnt require any GPU's to train. Once I had the appropriate server instance set up I chose to use python to write the code for plaribus, admitedly a systems level language such as C would have been slightly more efficient, though the difference would be insignificant.</p>
 
       <h2>Abstraction</h2>
+
+
       <p>Before I can begin writing the code to train the bot I need to first solve the promblem of Abstraction when it comes to poker hands. In no-limit Texas Hold'em, there are far too many possible decision points to handle individually as doing this would be computationally unfeasable, so Pluribus uses abstraction to simplify the game. It employs two types of abstraction: action and information abstraction. Action abstraction reduces the number of bet sizes the AI considers, grouping similar bets together (like treating bets of $200 and $201 as the same). Information abstraction groups similar hands, such as a 9-high and 10-high straight, into the same category. This drastically reduces complexity, allowing Pluribus to form strategies more efficiently while still responding dynamically to "off-tree" actions from opponents. Now in practice coding this is a little more difficult.</p>
+      
+      <p>The script uses Monte Carlo simulation to estimate hand strengths.
+          It has separate functions for simulating hands at the river, turn, and flop stages.
+          For each stage, it simulates multiple possible outcomes and compares the strength of the hand against randomly drawn opponent hands.
+          The script uses clustering to group similar hand strengths together, which helps in reducing the complexity of the calculations.
+          It uses parallel processing to speed up the calculations.</p>
+
+      <p> The script uses concepts like Earth Mover's Distance (EMD) to measure the similarity between hand strength distributions, and it employs clustering to group similar hands together.
+      The calculations are computationally intensive, so the script uses parallel processing (with the Rayon library) and progress bars to manage and display the progress of long-running calculations.</p>
       <h3>Action Abstraction</h3>
       <p>In implementing action abstraction, I focused on reducing the complexity of betting decisions while maintaining strategic diversity. The core of this approach involves simulating hand strengths for each street (flop, turn, river) and then clustering these results using K-means. K-means is an algorithm that partitions data into K groups, where each data point belongs to the cluster with the nearest mean. By limiting the number of clusters, I effectively grouped similar betting scenarios together, significantly reducing the number of distinct situations the AI needs to consider. For example, on the river, I simulated hand strengths for all possible card combinations, then used K-means to group these into 50 clusters. This process was repeated for the turn and flop, with each street's clusters informing the next. This hierarchical clustering approach allows the AI to make decisions efficiently across all stages of the game, balancing computational feasibility with strategic depth. The use of K-means ensures that the grouped scenarios are truly similar in terms of hand strength, providing a solid foundation for the AI's decision-making process. I used 50 groups for each street(flop, turn, river)</p>
       
