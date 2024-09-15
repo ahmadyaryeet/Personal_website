@@ -36,8 +36,7 @@ function MainPage() {
             <h2>Notable Achievements</h2>
             <ul>
               <li><strong>Math Competitions Champion</strong>: Placed in the top 0.0014% in the UKMT Senior Maths Challenge, invited to British Mathematics Olympiad and UKMT National Math Summer School.</li>
-              <li><strong>National Charity Ambassador</strong>: Created a local charity for disadvantaged students, later partnering with the Social Mobility Foundation as an ambassador.</li>
-              <li><strong>Debate Club Founder and Leader</strong>: Started a school debate club, led team to second place nationally in the National Sheriff Challenge.</li>
+              <li><strong>National Charity Ambassador</strong>: Helped create a local charity for disadvantaged students, later partnering with the Social Mobility Foundation as an ambassador.</li>
             </ul>
           </section>
 
