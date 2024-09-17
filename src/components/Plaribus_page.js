@@ -6,21 +6,10 @@ function PlaribusPokerAI() {
     <div className="project-page">
       <h1>Plaribus Poker AI</h1>
       <p>
-        The Plaribus Poker AI is a cutting-edge artificial intelligence system designed to excel at 6-player poker, beating the best human players. 
-        It represents a significant achievement in the field of game theory and machine learning.
-
-        Much of my motivation to recreate Pluribus stemmed from reading Meta's breakthrough paper on it, linked <a href="https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/" target="_blank" rel="noopener noreferrer">here</a>. They managed to make two major breakthroughs: the first being creating an AI capable of playing six-player poker at a superhuman level, a game far more complex than previous AI benchmarks like chess or Go. Traditionally, AI strategies in two-player zero-sum games, like chess, are based on computing a Nash equilibrium, which guarantees that the AI won't lose no matter what the opponent does. However, in a game with more than two players, computing a Nash equilibrium becomes impractical because it's computationally infeasible and inefficient. As a result, Pluribus had to rely on different algorithmic approaches that allowed it to defeat human players without needing to compute exact Nash equilibria. The second breakthrough was achieving this with astonishing efficiency. Unlike previous AI projects, which required massive computational resources costing millions, Pluribus was trained in just eight days using a 64-core server with less than 512 GB of RAM and no GPUs. The entire training cost less than $150. This efficiency made it feasible for someone like me to consider recreating the system myself.      </p>
-      
-      <p>With Plaribus there are three main problems each of which I will expand on below. Abstraction, Training and Real Time Search</p>
-
-      <p>Once I had gained a strong fundamental understanding of the algorithims used to train Plaribus, I looked online for a viable open source version as I reasoned it would probably be easier to build upon someones work then start from scratch. Alas sadly the initial plaribus team didnt release any of the code they used for their algorithim, due to the fact it could be easily exploited to create hundreds of Poker AI bots causing major promblems for the online betting community. There was very few usuable open source versions available so i ended just picking one with some of the basic fundamentals built, e.g a poker table to play against the bot and some rough attempts to implement the appropriate stratergies.</p>
-      <p>The next step was finding the appropriate server instance to run and train this bot. This led me to learn all about Amazon's EC2 services and how to work on a server instead of my local machine. The spefics I required to train my bot was 512 gb of CPU ram, 128 cores. Suprisingly this bot didnt require any GPU's to train. Once I had the appropriate server instance set up I chose to use python to write the code for plaribus, admitedly a systems level language such as C would have been slightly more efficient, though the difference would be insignificant.</p>
-
-      <p>
       - Pluribus Poker AI is an advanced system built to dominate 6-player poker, consistently beating top human players.<br></br>
-      - It’s a major breakthrough in game theory and machine learning, going beyond what AI had achieved in games like chess and Go.<br></br>
+      - It’s a major breakthrough in game theory and machine learning, going beyond what AI had achieved in games like chess and Go, as it is a 6 player hidden information game instead of 2.<br></br>
       - I was motivated to recreate Pluribus after reading Meta’s paper on its impressive breakthroughs.<br></br>
-      - The first breakthrough: Pluribus doesn't rely on Nash equilibria (common in two-player games like chess), instead using new strategies that work for multiplayer poker.<br></br>
+      - The first breakthrough: Pluribus doesn't rely on an exact Nash equilibria Algorthim, as that would be computationally unfeasable, instead using new strategies to approach Nash Equilibrium.<br></br>
       - The second breakthrough: Pluribus was incredibly efficient to train, costing less than $150 and running on a 64-core server with under 512 GB of RAM, no GPUs.<br></br>
       - It took Meta only 8 days to train Pluribus, which made it seem possible for someone like me to try building my own version.<br></br>
       - Unfortunately, Meta didn’t release the original code to prevent misuse for online gambling, so I had to find an basic open-source alternative.<br></br>
