@@ -5,6 +5,8 @@ function PlaribusPokerAI() {
   return (
     <div className="project-page">
       <h1>Plaribus Poker AI</h1>
+      <a href="https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/" target="_blank">Meta's initial paper</a>
+      
       <p>
       - Pluribus Poker AI is an advanced system built to dominate 6-player poker, consistently beating top human players.<br></br>
       - It’s a major breakthrough in game theory and machine learning, going beyond what AI had achieved in games like chess and Go, as it is a 6 player hidden information game instead of 2.<br></br>
