@@ -17,7 +17,8 @@ function MainPage() {
             <h2>Work Experience</h2>
             <ul>
               <li>GCHQ internship - Did a 4- week internship where I trained a Neural network to summarise incoming threats into a few words, and classify them into one of 72 catogories. During the internship I was introduced to a variety of new concepts, such as Jaccard Distance, MLP's and Word embeddings to name a few.</li>
-              <li>J.P. Morgan Internship - I worked as a summer Intern in the Asset Management Line of Business at JPM, where I gained a insight into the how asset managment actually works.</li>
+              <li>J.P. Morgan Insight week - I worked as a summer Intern in the Asset Management Line of Business at JPM, where I gained a insight into the how asset managment actually works.</li>
+              <li>UKMT Summer School - Due to my high performance in the UKMT maths challenge, I was invited to the British Mathematics Olympiad and UKMT National Math Summer School. During the 2- week long summer school, I received curated classes from some incredible mathematicians in a variety of interesting math topics, from the 4-colour theorem to the pigeon-hole principle.</li>
             </ul>
           </section>
 
