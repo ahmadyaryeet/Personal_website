@@ -45,7 +45,7 @@ function MainPage() {
             <h2>About Me</h2>
             <p>
                 I'm an aspiring stand-up comedian, who enjoys reading books.
-                <a href="https://www.goodreads.com/user/show/105851678-ahmad-saroya">Here's My Library</a>
+                <a href="https://www.goodreads.com/user/show/105851678-ahmad-saroya"> Here's My Library</a>
             </p>
 
             <p className="email-container">
