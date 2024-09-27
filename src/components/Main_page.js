@@ -16,7 +16,7 @@ function MainPage() {
           <section className="education">
             <h2>Work Experience</h2>
             <ul>
-              <li>GCHQ internship - Did a 4- week internship where I trained a Neural network to summarise incoming threats into a few words, and classify them into one of 72 catogories. During the internship I was introduced to a variety of new concepts, such as Jaccard Distance, MLP's and Word embeddings to name a few.</li>
+              <li>GCHQ internship - Did a 4- week internship where I trained a Neural network to summarise incoming threats into a few words, and classify them into one of 72 catogories. Used Jaccard Distance between word embeddings to do </li>
               <li>J.P. Morgan Insight week - I worked as a summer Intern in the Asset Management Line of Business at JPM, where I gained a insight into the how asset managment actually works.</li>
               <li>UKMT Summer School - Due to my high performance in the UKMT maths challenge, I was invited to the British Mathematics Olympiad and UKMT National Math Summer School. During the 2- week long summer school, I received curated classes from some incredible mathematicians in a variety of interesting math topics, from the 4-colour theorem to the pigeon-hole principle.</li>
             </ul>
@@ -26,8 +26,8 @@ function MainPage() {
             <h2>Projects</h2>
             <ul>
               <li><Link to="/plaribus-poker-ai"><strong>Plaribus Poker AI</strong></Link>: Recreated Meta's strongest Ai poker bot, capable of beating the worlds best players at 6 player poker . I used an amazon EC2 machine with 128 cores and 512GB of RAM, to train and test the AI in real poker games. I used Python to write the code for the Poker AI  .</li>
-              <li><Link to="/web-app-development"><strong>Web/App Development</strong></Link>: Created a large number of apps, including a AI character app, which provided users with an immersive experiance where they could speak to and create any fictional character.Through projects like this I have become very experianced with dealing with ai models from LLM's to image generation. In addition to growing skilled at building larger, more intricate applications.</li>
-              <li><Link to="/game-development"><strong>Game Development</strong></Link>: I have many years of experiance in game development, where I have published and developed a large variety of games.Ive created From large scale open-world survival games, to cozy,aesthetic, experiance based games. </li>
+              <li><Link to="/web-app-development"><strong>Web/App Development</strong></Link>: "I developed Imagineer AI, an app for creating and interacting with AI-driven fictional characters, showcasing my expertise in LLMs, image generation, and immersive experiences. I also built Floop, a music player app, gaining proficiency in Firebase storage and Google's cloud services."</li>
+              <li><Link to="/game-development"><strong>Game Development</strong></Link>: Using Unity's engine, I developed and published VR games for the Oculus Meta Quest headset. By integrating ChatGPT-4 and OpenAI's Whisper, I enhanced many of these games with AI features like voice detection and an AI therapist. </li>
             </ul>
           </section>
 
