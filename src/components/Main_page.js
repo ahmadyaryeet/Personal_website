@@ -8,7 +8,7 @@ function MainPage() {
       <div className="main-content">
         <header>
           <h1>Ahmad Saroya</h1>
-          <p>Hi im currently an undergraduate Maths student at Oxford </p>
+          <p>I am currently building <a href="https://www.avicenacare.com/" target="_blank" rel="noopener noreferrer">Avicenna Care</a> - Agentic AI to recover insurance revenue end-to-end — driving more collections, faster.</p>
         </header>
 
         <main>
