@@ -8,7 +8,7 @@ function MainPage() {
       <div className="main-content">
         <header>
           <h1>Ahmad Saroya</h1>
-          <p>I'm the co-CEO of <a href="https://movingatoms.ai" target="_blank" rel="noopener noreferrer">Moving Atoms</a> (Y Combinator), where we're building spatial intelligence for robotics. We turn the real world into simulation — capturing real environments and reconstructing them as rich, physically grounded 3D worlds — so robots can understand the space around them, train at scale, and act reliably when they get back to reality.</p>
+          <p>I am currently the co-CEO @ <a href="https://movingatoms.ai" target="_blank" rel="noopener noreferrer">Moving Atoms</a> (Y Combinator), where we're building spatial intelligence for robotics. We turn the real world into simulation — capturing real environments and reconstructing them as rich, physically grounded 3D worlds — so robots can understand the space around them, train at scale, and act reliably when they get back to reality.</p>
         </header>
 
         <main>
