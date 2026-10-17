@@ -8,7 +8,7 @@ function MainPage() {
       <div className="main-content">
         <header>
           <h1>Ahmad Saroya</h1>
-          <p>I am currently building <a href="https://www.avicenacare.com/" target="_blank" rel="noopener noreferrer">Avicenna Care</a> - Agentic AI to recover insurance revenue end-to-end — driving more collections, faster.</p>
+          <p>I'm the co-CEO of <a href="https://movingatoms.ai" target="_blank" rel="noopener noreferrer">Moving Atoms</a> (Y Combinator), where we're building spatial intelligence for robotics. We turn the real world into simulation — capturing real environments and reconstructing them as rich, physically grounded 3D worlds — so robots can understand the space around them, train at scale, and act reliably when they get back to reality.</p>
         </header>
 
         <main>
@@ -16,8 +16,9 @@ function MainPage() {
           <section className="education">
             <h2>Work Experience</h2>
             <ul>
-              <li>GCHQ internship - Did a 4- week internship where I trained a Neural network to summarise incoming threats into a few words, and classify them into one of 72 catogories. Used Jaccard Distance between word embeddings to do </li>
-              <li>J.P. Morgan Insight week - I worked as a summer Intern in the Asset Management Line of Business at JPM, where I gained a insight into the how asset managment actually works.</li>
+              <li><a href="https://movingatoms.ai" target="_blank" rel="noopener noreferrer"><strong>Moving Atoms</strong></a> (Y Combinator) - Co-CEO. Building real-to-sim spatial understanding for robotics: turning real-world spaces into simulation-ready environments so robots can perceive, reason about, and learn from the physical world.</li>
+              <li>GCHQ internship - Did a 4- week internship where I trained a Neural network to summarise incoming threats into a few words, and classify them into one of 72 categories, using Jaccard distance between word embeddings.</li>
+              <li>J.P. Morgan Insight week - I worked as a summer Intern in the Asset Management Line of Business at JPM, where I gained insight into how asset management actually works.</li>
               <li>UKMT Summer School - Due to my high performance in the UKMT maths challenge, I was invited to the British Mathematics Olympiad and UKMT National Math Summer School. During the 2- week long summer school, I received curated classes from some incredible mathematicians in a variety of interesting math topics, from the 4-colour theorem to the pigeon-hole principle.</li>
             </ul>
           </section>
